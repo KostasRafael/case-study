@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" type="text/css">
 
@@ -13,145 +12,145 @@
 </head>
 
 <body>
-    <section id="case-study-container">
-        <div class="images-border-container"></div>
-        <div id="case-study">
-            <h1>Case Study</h1>
-            <h1>My full stack project</h1>
-            <h1 class="project-name">myFlix</h1>
-        </div>
-        <div class="images-border-container"></div>
-    </section>
-
-
-    <section id="slogan">
-        <img src="./assets/images//myflix-1.png" alt="myFlix image">
-        <div class="slogan-div">
-            <h1>I <span>flix</span></h1>
-            <h1> you <span>flix,</span> </h1>
-            <h1> we all <span>flix!</span> </h1>
-            <h1>Lets do so informativelly using <span>myFlix</span>!!!</h1>
-
-        </div>
-    </section>
-
-    <div id="purpose-objective">
-        <div id="purpose-div">
-            <h1>Purpose</h1>
-            <img class="career-foundry-img" src="./assets/images/career-foundry.png" alt="">
-            <p>I built this project as an exercise for my CareerFoundry course to test and practice both, my back-end
-                and front-end abilities.</p>
-        </div>
-
-        <div id="objective-div">
-            <h1>Objective</h1>
-            <img src="./assets/images/front-back.png" alt="">
-            <p>To build an application completely from scratch, server side and client side. This will be part of my
-                portfolio. </p>
-
-        </div>
-    </div>
-
-    <div id="server-side">
-        <h1>Server side</h1>
-        <div class="paragraph-diagram">
-            <p>The back-end of this application consists of a restful API built with Node.js and a non-relational
-                MongoDB
-                database. The API gets it's data from the database, and exposes those data to users through it's various
-                endpoints.</p>
-            <img class="diagram" src="./assets//images/diagram.png" alt="">
-        </div>
-        <div class="back-end-images-div">
-            <img class="code-image" src="./assets/images/endpoints.png" alt="">
-            <div class="right-images-div">
-                <img src="./assets/images/movie-object.png" alt="">
-                <img src="./assets/images/user-object.png" alt="">
+    <div class="container">
+        <section id="case-study-container">
+            <div id="case-study">
+                <h1 style="background-color: lightcoral;">Case Study</h1>
+                <h1>My full stack project</h1>
+                <h1 class="project-name">myFlix</h1>
             </div>
-        </div>
+            <div class="images-border-container"></div>
+        </section>
 
-        <div id="client-side">
-            <h1>Client-side</h1>
-            <p>The user interface was built using React alongside with the Redux state management library.</p>
-            <div class="images-lists">
-                <div class="component-integration">
-                    <h4>Component integration</h4>
-                    <img class="components-img" src="./assets//images/components.jpg" alt="">
-                </div>
-                <div class="components-list">
-                    <h4>List of React components</h4>
-                    <div class="lists-parent-div">
+        <section id="overview" style="margin-top: 4rem;">
+            <h1 style="background-color: lightcoral;">Overview</h1>
+            <div class="overview-content">
+                <p class="paragraph" style="margin-top: 2rem;">This is a full-stack web application encompassing both
+                    the front-end and back-end. The back-end is
+                    built
+                    using Node.js, leveraging an API that interacts with a MongoDB database to handle data storage and
+                    retrieval. The front-end is developed using both React.js enabling dynamic and
+                    responsive user interfaces. The API serves as the communication layer, facilitating seamless data
+                    exchange between the database and the client applications through structured HTTP requests. </p>
+                <img src="./assets/images/front-back.png" alt="">
+            </div>
+            <img class="diagram" src="./assets//images/diagram.png" alt="">
+        </section>
+
+        <section id="objective" style="margin-top: 4rem;">
+            <h1 style="background-color: lightcoral;">The objective</h1>
+
+            <p class="paragraph" style="margin-top: 2rem;">To have a fully functional user interface that displays a
+                list of movies. The user will be able to create
+                an account, login, add movies to their list of favourite movies, update their profile information and
+                delete their account</p>
+        </section>
+
+        <section id="challenge" style="margin-top: 4rem;">
+            <h1 style="background-color: lightcoral;">The challenge</h1>
+            <p class="paragraph" style="margin-top: 2rem;">To build all parts required for a fully functional
+                application. Namely, the back-end infustructure that
+                ensures data flow, and the front-end infastructure that ensure data consumption and usage through a
+                seamless
+                user interface</p>
+        </section>
+
+        <section id="solution" style="margin-top: 4rem;">
+            <h1 style="background-color: lightcoral;">The Solution</h1>
+
+
+            <div id="server-side" style="margin-top: 4rem;">
+                <h1>Server side</h1>
+                <div id="movie-api">
+                    <p class="paragraph" style="margin-top: 2rem;">The RESTful API was built with Node.js in combination
+                        with the following technologies:</p>
+                    <div id="tech-images">
                         <ul>
-                            <li>NavigationBar.jsx</li>
-                            <li>SignupView.jsx</li>
-                            <li>LoginView.jsx</li>
-                            <li>MainView.jsx</li>
-                            <li>MoviesList.jsx</li>
-                            <li>MovieCard.jsx</li>
+                            <li>Express.js</li>
+                            <li>Passport</li>
+                            <li>JWT</li>
+                            <li>OAth2</li>
+                            <li>CORS</li>
+                            <li>Body-Parser</li>
                         </ul>
-                        <ul>
-                            <li>MovieView.jsx</li>
-                            <li>ProfileView.jsx</li>
-                            <li>UpdateUser.jsx</li>
-                            <li>FavoriteButton.jsx</li>
-                            <li>FavoriteMovies.jsx</li>
-                        </ul>
+                        <img class="code-image" src="./assets/images/endpoints.png" alt="">
                     </div>
                 </div>
-                <div class="redux">
-                    <h4>Redux state management</h4>
-                    <ul>
-                        <h6>State managed</h6>
-                        <li>movies list</li>
-                        <li>movies filter</li>
-                        <li>user</li>
-                    </ul>
+
+                <div id="database" style="margin-top: 4rem;">
+                    <p class="paragraph">The database was build with non-relational database techniques using MongoDB
+                        and storing data in
+                        object-like structures. The data stored in the MongoDB are the movies data and the users data.
+                    </p>
+                    <div class="database-images">
+                        <img src="./assets/images/movie-object.png" alt="">
+                        <img src="./assets/images/user-object.png" alt="">
+                    </div>
+                </div>
+
+                <div id="client-side" style="margin-top: 4rem;">
+                    <h1>Client-side</h1>
+                    <p class="paragraph" style="margin-top: 2rem;">The user interface was built using React alongside
+                        with:</p>
+                    <div class="react-images">
+                        <ul>
+                            <li>React Redux</li>
+                            <li>React-Bootstrap</li>
+                            <li>Parcel</li>
+                            <li>Brouser-Router</li>
+                        </ul>
+                        <img class="components-img" src="./assets//images/components.jpg" alt="">
+                    </div>
+                    <p class="paragraph" style="margin-top: 2rem;">Using these technologies, I created different React
+                        components and then rendered those components
+                        by
+                        means of props. Also, I managed the state of the application with Redux, in a central store.</p>
                 </div>
             </div>
-        </div>
-
+        </section>
 
         <div id="project-overview" class="container-fluid">
-            <h1>Features of myFlix application:</h1>
+            <h1 style="background-color: lightcoral;">Features:</h1>
 
             <div id="action-cards-container" class="container-fluid">
                 <div class="row">
-
-                    <div class="action-card-col col-6 col-md-4">
+                    <div class="action-card-col col-6 col-md-4" style="margin-bottom: 1rem;">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h4>Sign up</h4>
                                 <p>User can create their personal account</p>
-                                <img src="./assets/images/signup.png" alt="">
+                                <img src="./assets/images/signup.png" alt="" style="max-width: 100%; max-height: 100%;">
                             </div>
                         </div>
                     </div>
 
-                    <div class="action-card-col col-6 col-md-4">
+                    <div class="action-card-col col-6 col-md-4" style="margin-bottom: 1rem;">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h4>Log in</h4>
                                 <p>User can login to their personal account</p>
-                                <img src="./assets/images/login.png" alt="">
+                                <img src="./assets/images/login.png" alt="" style="max-width: 100%; max-height: 100%;">
                             </div>
                         </div>
                     </div>
 
-                    <div class="action-card-col col-6 col-md-4">
+                    <div class="action-card-col col-6 col-md-4" style="margin-bottom: 1rem;">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h4>Stream movies</h4>
                                 <p>User can see a list of movies.</p>
-                                <img src="./assets/images/list.png" alt="">
+                                <img src="./assets/images/list.png" alt="" style="max-width: 100%; max-height: 100%;">
                             </div>
                         </div>
                     </div>
 
-                    <div class="action-card-col col-6 col-md-4">
+                    <div class="action-card-col col-6 col-md-4" style="margin-bottom: 1rem;">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h4>Add to favorites</h4>
                                 <p>User can heart movies and add them to their list of favorites.</p>
-                                <img src="./assets/images/hearted-movie.png" alt="">
+                                <img src="./assets/images/hearted-movie.png" alt=""
+                                    style="max-width: 100%; max-height: 100%;">
                             </div>
                         </div>
                     </div>
@@ -159,47 +158,54 @@
 
 
 
-                    <div class="action-card-col col-6 col-md-4">
+                    <div class="action-card-col col-6 col-md-4" style="margin-bottom: 1rem;">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h4>Browse favorites</h4>
                                 <p>User can see a list of their hearted movies</p>
-                                <img src="./assets/images/favorite-movies.png" alt="">
+                                <img src="./assets/images/favorite-movies.png" alt=""
+                                    style="max-width: 100%; max-height: 100%;">
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="action-card-col col-6 col-md-4">
+                    <div class="action-card-col col-6 col-md-4" style="margin-bottom: 1rem;">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h4>Delete favorites</h4>
-                                <p>User can remove a movie from their list of favorites, i.e once they have watched it a
+                                <p>User can remove a movie from their list of favorites, i.e once they have watched
+                                    it a
                                     few
                                     times.</p>
-                                <img src="./assets/images/remove-favorite.png" alt="">
+                                <img src="./assets/images/remove-favorite.png" alt=""
+                                    style="max-width: 100%; max-height: 100%;">
                             </div>
                         </div>
                     </div>
 
-                    <div class="action-card-col col-6 col-md-4">
+                    <div class="action-card-col col-6 col-md-4" style="margin-bottom: 1rem;">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h4>Update user info</h4>
-                                <p>You can delete movies from your list of favorites, for example, once you have seen a
+                                <p>You can delete movies from your list of favorites, for example, once you have
+                                    seen a
                                     movie a fiew times.</p>
-                                <img src="./assets/images/update-user.png" alt="">
+                                <img src="./assets/images/update-user.png" alt=""
+                                    style="max-width: 100%; max-height: 100%;">
                             </div>
                         </div>
                     </div>
 
-                    <div class="action-card-col col-6 col-md-4">
+                    <div class="action-card-col col-6 col-md-4" style="margin-bottom: 1rem;">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h4>Delete user</h4>
-                                <p>You can delete movies from your list of favorites, for example, once you have seen a
+                                <p>You can delete movies from your list of favorites, for example, once you have
+                                    seen a
                                     movie a fiew times.</p>
-                                <img src="./assets/images/delete-user.png" alt="">
+                                <img src="./assets/images/delete-user.png" alt=""
+                                    style="max-width: 100%; max-height: 100%">
                             </div>
                         </div>
                     </div>
@@ -208,56 +214,41 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="retrospective">
-        <h1>Retrospective</h1>
-        <div class="text-section">
-            <h4><span>I enjoyed</span> building everything from scratch, the databse, the restfull API and the
-                user-interface, and
-                connecting all these together. It was fascinating seeing the basic components of an application and how
-                they connect with each other.</h4>
-        </div>
-        <div class="text-section">
-            <h4><span>I struggled</span> with debugging because I had to deal with the
-                restfull API and the user interface. At one point, the UI displayed incorrect data, which could have
-                stemmed from either the API response or how React handled it. I feared spending ages searching both.
-                Fortunately, Postman helped by allowing me to send HTTP requests and isolate the API for testing. This
-                revealed the issue was API-related, enabling me to fix it without any unnecessary front-end debugging..
-            </h4>
-        </div>
-        <div class="text-section">
-            <h4><span>My future plan</span> is to connect my application to the IMDB API and pull movies from it,
-                allowing my
-                application to access a larger selection of movies. </h4>
-        </div>
-        <div class="text-section">
-            <h4><span>Overall,</span> I really enjoyed building this application. I’m super happy and proud to have
-                created my own
-                application entirely from scratch!</h4>
+        <div id="retrospective">
+            <h1 style="background-color: lightcoral;">Retrospective</h1>
+            <div class="text-section">
+                <h4><span>I enjoyed</span> building everything from scratch, the databse, the restfull API and the
+                    user-interface, and
+                    connecting all these together. It was fascinating seeing the basic components of an application and
+                    how
+                    they connect with each other.</h4>
+            </div>
+            <div class="text-section">
+                <h4><span>I struggled</span> with debugging because I had to deal with the
+                    restfull API and the user interface. At one point, the UI displayed incorrect data, which could have
+                    stemmed from either the API response or how React handled it. I feared spending ages searching both.
+                    Fortunately, Postman helped by allowing me to send HTTP requests and isolate the API for testing.
+                    This
+                    revealed the issue was API-related, enabling me to fix it without any unnecessary front-end
+                    debugging..
+                </h4>
+            </div>
+            <div class="text-section">
+                <h4><span>My future plan</span> is to connect my application to the IMDB API and pull movies from it,
+                    allowing my
+                    application to access a larger selection of movies. </h4>
+            </div>
+            <div class="text-section">
+                <h4><span>Overall,</span> I really enjoyed building this application. I’m super happy and proud to have
+                    created my own
+                    application entirely from scratch!</h4>
+            </div>
         </div>
     </div>
-    <!--Screenshots and a diagram showing the connection and describing the connection-->
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const imagePaths = [
-            "./assets/images/myflix-1.png",
-            "./assets/images/myflix-2.png"
-        ];
 
-        const containers = document.querySelectorAll(".images-border-container");
-
-        containers.forEach(container => {
-            for (let i = 0; i < 7; i++) {
-                const img = document.createElement("img");
-                img.classList.add('border-images')
-                img.src = imagePaths[i % 2]; // Alternate between image1.png and image2.png
-                img.alt = `Image ${i + 1}`;
-                container.appendChild(img);
-            }
-        });
-    });
 </script>
 
 </html>
